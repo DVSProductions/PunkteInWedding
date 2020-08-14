@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="{StaticResource BG}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PunkteInWedding.Views.Startpage">
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="Center" HorizontalOptions="Fill" Padding="20">
+			<Label  Text="Punkte in Wedding" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="30" Margin="0,0,0,10"/>
+			<Button Text="Einloggen" Margin="0,10,0,0" Clicked="Login_Clicked" Style="{StaticResource Info}"/>
+			<Button Text="Registrieren" Margin="0,10,0,0" Clicked="Register_Clicked" FontSize="Medium"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

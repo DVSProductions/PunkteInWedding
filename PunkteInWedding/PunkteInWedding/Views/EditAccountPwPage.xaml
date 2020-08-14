@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="{StaticResource BG}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PunkteInWedding.Views.EditAccountPwPage" Title="Account Bearbeiten">
+	<ContentPage.Content>
+		<StackLayout Margin="10">
+			<Label Style="{StaticResource StyleLB}" Text="Bitte geben sie das aktuelle Passwort ein um Änderungen vorzunehmen" FontSize="Medium"/>
+			<Entry x:Name="ePassword" Placeholder="Passwort" IsPassword="True" FontSize="Medium"/>
+			<Button Text="Verifizieren" FontSize="Large" Margin="0,10,0,0" Style="{StaticResource Warning}" Clicked="Button_Clicked"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

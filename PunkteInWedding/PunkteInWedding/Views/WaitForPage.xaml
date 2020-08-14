@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="{StaticResource BG}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PunkteInWedding.Views.WaitForPage" Title="Warten Auf">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="Abbrechen" Clicked="ToolbarItem_Clicked"/>
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<StackLayout>
+			<SearchBar x:Name="sb" CancelButtonColor="Accent" PlaceholderColor="#979797" TextColor="{StaticResource Bright}" Placeholder="Username" HeightRequest="42" TextChanged="Sb_TextChanged"/>
+			<ListView Margin="30,0"  ItemsSource="{Binding Users}" SelectionMode="None" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped" HasUnevenRows="true" RefreshCommand="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<Label Text="{Binding Username}" HorizontalOptions="Center" Style="{StaticResource StyleLB}" FontSize="25"/>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="{StaticResource BG}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PunkteInWedding.Views.EditAccountPage" Title="Account Bearbeiten">
+	<ContentPage.Content>
+		<StackLayout Margin="10" Padding="10">
+			<Label  Text="Veränderungen Optional. Leere Felder werden Ignoriert." FontSize="Medium"/>
+			<Entry x:Name="eUsername" Placeholder="Username"/>
+			<Entry x:Name="eEmail" Placeholder="Email"/>
+			<Entry IsPassword="true" x:Name="ep" Placeholder="Neues Passwort"/>
+			<Entry IsPassword="true" x:Name="epa" Placeholder="Passwort Wiederholen"/>
+			<Button Text="Übernehmen" Clicked="Button_Clicked" FontSize="Large" Margin="0,10,0,0" Style="{StaticResource Warning}"/>
+			<Button Text="Account Löschen" Clicked="Button_Clicked_1" FontSize="Large" Margin="0,50,0,0" Style="{StaticResource Danger}"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

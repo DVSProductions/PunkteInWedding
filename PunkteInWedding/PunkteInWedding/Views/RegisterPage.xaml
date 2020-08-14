@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  BackgroundColor="{StaticResource BG}"  xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PunkteInWedding.Views.RegisterPage">
+	<ContentPage.Content>
+		<StackLayout HorizontalOptions="Fill" Padding="20">
+			<Label Text="Account Erstellen"  FontSize="Large" Margin="0,0,0,10"/>
+			<Entry x:Name="eUsername" Placeholder="Username" FontSize="Medium" />
+			<Entry x:Name="eEmail" Placeholder="Backup Email" FontSize="Medium" />
+			<Entry x:Name="ep" Placeholder="Passwort" IsPassword="True" FontSize="Medium" TextChanged="Ep_TextChanged"/>
+			<Entry x:Name="epa" Placeholder="Passwort wiederholen" IsPassword="True" FontSize="Medium" TextChanged="Ep_TextChanged"/>
+			<Button Style="{StaticResource Info}" Text="Registrieren" Clicked="Register_Clicked"/>
+			<Label Text="Encrypted Password Preview:" FontSize="Small"/>
+			<Label x:Name="lbEncrypt" FontSize="Small"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

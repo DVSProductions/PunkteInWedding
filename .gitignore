@@ -1,0 +1,12 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+/.vs
+/packages/
+bin/
+obj/
+
+
+# Password Files are not included!
+EmailTokens.txt

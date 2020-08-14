@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="PunkteInWedding.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<!--Global Styles-->
+			<Color x:Key="Bright">#FAFAFA</Color>
+			<Color x:Key="Medium">#F5F5F5</Color>
+			<Color x:Key="Dark">#979797</Color>
+			<Color x:Key="BG">#303030</Color>
+			<Color x:Key="BGDark">#212121</Color>
+			<Style TargetType="ContentPage">
+				<Setter Property="BackgroundColor" Value="{StaticResource BG}"/>
+			</Style>
+			<Style x:Key="StyleLB" TargetType="Label">
+				<Setter Property="TextColor" Value="{StaticResource Bright}"/>
+			</Style>
+			<Style TargetType="Label">
+				<Setter Property="TextColor" Value="{StaticResource Bright}"/>
+			</Style>
+			<Style x:Key="Info" TargetType="Button">
+				<Setter Property="BackgroundColor" Value="#2196F3"/>
+				<Setter Property="FontSize" Value="Large"/>
+			</Style>
+			<Style x:Key="Danger" TargetType="Button">
+				<Setter Property="BackgroundColor" Value="#C9302C"/>
+				<Setter Property="FontSize" Value="Large"/>
+			</Style>
+			<Style x:Key="Warning" TargetType="Button">
+				<Setter Property="BackgroundColor" Value="#EC971F"/>
+				<Setter Property="FontSize" Value="Large"/>
+			</Style>
+			<Style TargetType="Button">
+				<Setter Property="BackgroundColor" Value="#777777"/>
+				<Setter Property="FontSize" Value="Medium"/>
+				<Setter Property="TextColor" Value="White"/>
+				<Setter Property="Margin" Value="0,10,0,0"/>
+				<Setter Property="Padding" Value="10,0"/>
+			</Style>
+			<Style TargetType="Entry">
+				<Setter Property="PlaceholderColor" Value="{StaticResource Dark}"/>
+				<Setter Property="TextColor" Value="{StaticResource Bright}"/>
+				<Setter Property="FontSize" Value="Medium"/>
+			</Style>
+			
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PunkteInWedding.Views.EditAccountDeletePage" Title="Account Löschen">
+	<ContentPage.Content>
+		<StackLayout Margin="10">
+			<Label Text="ACHTUNG ein gelöschter Account kann nicht wiederhergestellt werden!" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+			<Label Text="Zu deiner Sicherheit schicken wir dir eine Email zur Bestätigung der Löschung. Nach der Löschung werden alle Daten dieses Accounts permanent vom Server gelöscht."/>
+			<Button Style="{StaticResource Danger}" Text="Wirklich Löschen" Clicked="Button_Clicked"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
